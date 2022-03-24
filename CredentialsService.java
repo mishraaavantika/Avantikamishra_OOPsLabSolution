@@ -6,7 +6,7 @@ import java.util.Random;
 public class CredentialsService {
 	private String generatePassword() {
 		Random random = new Random();
-		String pass = null;
+		String pass = "";
 		for (int i = 0; i < 8; i++)
 			pass += (char) random.nextInt(33, 123);
 		return pass;
